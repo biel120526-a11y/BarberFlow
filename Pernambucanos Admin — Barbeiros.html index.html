@@ -186,7 +186,11 @@ window.$RefreshSig$ = () => (type) => type;</script>
   <style type="text/css" data-vite-dev-id="/home/runner/workspace/artifacts/barbearia-admin/src/index.css">/*! tailwindcss v4.2.1 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
-@layer theme {
+@layer theme {  const horariosPadrao = [
+Segunda-feira (1): 12:00 até 20:00
+Terça a Sábado (2 a 6): 09:00 até 20:00
+Domingo (0): 09:00 até 14:00
+];const diasFuncionamento = [0,1,2,3,4,5,6];
   :root, :host {
     --color-red-50: oklch(97.1% 0.013 17.38);
     --color-red-300: oklch(80.8% 0.114 19.571);
